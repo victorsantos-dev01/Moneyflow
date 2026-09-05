@@ -1,16 +1,65 @@
-# React + Vite
+# MoneyFlow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dashboard de finanças pessoais desenvolvido com React, para controle de receitas e despesas.
 
-Currently, two official plugins are available:
+## Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O MoneyFlow é uma aplicação web desenvolvida para simular um dashboard de controle financeiro pessoal.
 
-## React Compiler
+O projeto permite cadastrar receitas e despesas, acompanhar o saldo em tempo real e visualizar a distribuição dos gastos e a evolução financeira através de gráficos.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O objetivo foi aprofundar conceitos de React, como componentização, gerenciamento de estado e persistência de dados, construindo uma aplicação completa, responsiva e funcional.
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Cadastro de transações (receitas e despesas)
+- Validação de formulário
+- Listagem de transações
+- Remoção de transações
+- Cards de resumo (saldo, receitas, despesas e quantidade)
+- Filtro por mês
+- Filtro por categoria
+- Filtro por tipo (receita/despesa)
+- Gráfico de pizza com despesas por categoria
+- Gráfico de linha com evolução do saldo
+- Persistência dos dados utilizando LocalStorage
+- Layout responsivo
+- Compatibilidade com desktop, tablet e celular
+
+## Tecnologias utilizadas
+
+- React
+- Vite
+- JavaScript
+- Recharts
+- CSS3
+- LocalStorage
+- Git
+- GitHub
+
+## Estrutura do projeto
+
+MoneyFlow/
+│
+├── index.html
+├── README.md
+├── .gitignore
+├── package.json
+│
+└── src/
+├── components/
+│ ├── Header.jsx
+│ ├── SummaryCards.jsx
+│ ├── TransactionForm.jsx
+│ ├── Filters.jsx
+│ ├── Charts.jsx
+│ └── TransactionList.jsx
+│
+├── utils/
+│ ├── constants.js
+│ ├── format.js
+│ └── storage.js
+│
+├── App.jsx
+├── App.css
+└── index.css
